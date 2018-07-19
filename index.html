@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a class="click" href="#show">Show popup</a>
+    </div>
+
+    <div class="popup"></div>
+    <div class="popup-layer"></div>
+
+    <script src="js/MyJquery.js"></script>
+    <script src="js/PopUp.js"></script>
+    <script>
+        var popup = new Popup();
+        $('.click').on('click', function() {
+            popup.open('Hello Everybody. It is my first popup.');
+        });
+
+        $('.popup-layer').on('click', function() {
+            popup.close();
+        });
+    </script>
+</body>
+
+</html>
