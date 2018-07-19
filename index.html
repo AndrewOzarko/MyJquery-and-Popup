@@ -21,7 +21,7 @@
     <script src="js/MyJquery.js"></script>
     <script src="js/PopUp.js"></script>
     <script>
-        var popup = new Popup();
+        var popup = new Popup('.popup', '.popup-layer');
         $('.click').on('click', function() {
             popup.open('Hello Everybody. It is my first popup.');
         });
